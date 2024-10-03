@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="32" height="32" fill="transparent" rx="8" />
+  <rect x="2" y="2" width="28" height="28" fill="#4978E3" rx="4" />
+  <text x="16" y="20" font-family="Arial" font-size="24" text-anchor="middle" fill="#FFD700" dominant-baseline="middle">
+    <tspan>₹</tspan>
+  </text>
+</svg>
