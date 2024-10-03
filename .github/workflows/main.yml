@@ -1,0 +1,19 @@
+on: 
+  schedule:
+  - cron: "0 0 * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bestfd
+          fetch-depth: 1
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.14.1'
+      - run: npm install
+      - run: npm run scrape
+      - run: git config --global user.name "Ameya Karve" && git config --global user.email "ameya.karve@gmail.com" && git commit -a -m "cron commit" && git push origin main
